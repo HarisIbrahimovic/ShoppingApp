@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ShoppingApplication</string>
+    <string name="pocetna">Početna</string>
+    <string name="pretraga">Pretraga</string>
+    <string name="korpa">Korpa</string>
+    <string name="profil">Profil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dostava_na_adresu">DOSTAVA NA ADRESU</string>
+    <string name="lokacija">LOKACIJA</string>
+    <string name="dobrodo_li_na_korpu">Dobrodošli na Korpu!</string>
+    <string name="mo_ete_poru_iti_svakim_danom_od_8h_do">Možete poručiti svakim danom od 8h do</string>
+    <string name="_00h_uz_mogu_nost_karti_nog_pla_anja_i">00h uz mogućnost kartičnog plaćanja i</string>
+    <string name="beskontaktne_dostave">beskontaktne dostave</string>
+    <string name="popularne_kategorije">Popularne kategorije</string>
+    <string name="novo_u_tuzli">Novo u Tuzli</string>
+    <string name="todo">TODO</string>
+    <string name="otvoreno">OTVORENO</string>
+    <string name="presko_i">Preskoči</string>
+    <string name="korpa2">korpa</string>
+    <string name="prijava">Prijava</string>
+    <string name="slash">/</string>
+    <string name="registarcija">Registarcija</string>
+    <string name="email">Email</string>
+    <string name="ifra">Šifra</string>
+    <string name="pretra_ite_patnere_ili_artikle">Pretražite patnere ili artikle</string>
+    <string name="promjeni">PROMJENI</string>
+    <string name="promijeni">PROMIJENI</string>
+    <string name="lokacijaMalim">Lokacija</string>
+    <string name="va_a_korpa">VAŠA KORPA</string>
+    <string name="artikli">Artikli</string>
+    <string name="ukupan_iznos">Ukupan iznos</string>
+    <string name="va_a_korpa_je_trenutno_prazna">Vaša korpa je trenutno prazna</string>
+    <string name="novi_kola_i">Novi kolačić</string>
+    <string name="jo_1_narud_ba_do_nove_medalje">Još 1 narudžba do nove medalje</string>
+    <string name="omiljeni">Omiljeni</string>
+    <string name="o_nama">O nama</string>
+    <string name="odjavite_se">Odjavite se</string>
+    <string name="location">Location</string>
+    <string name="dodaj">Dodaj</string>
+    <string name="omiljeno">Omiljeno</string>
+</resources>

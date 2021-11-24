@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentProfile"
+    tools:context=".main.fragments.ProfileFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+
+       <ImageView
+           android:id="@+id/imageView4"
+           android:layout_width="130dp"
+           android:src="@drawable/medal"
+           android:layout_height="150sp"
+           android:layout_margin="10dp"
+           android:contentDescription="@string/todo"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <TextView
+           android:id="@+id/textView11"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginTop="28dp"
+           android:text="@string/novi_kola_i"
+           android:textColor="@color/black"
+           android:textSize="25sp"
+           app:layout_constraintStart_toEndOf="@+id/imageView4"
+           app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/jo_1_narud_ba_do_nove_medalje"
+           android:textSize="15sp"
+           android:layout_marginTop="5dp"
+           app:layout_constraintStart_toStartOf="@+id/textView11"
+           app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:layout_marginTop="20dp"
+           android:paddingStart="20dp"
+           android:id="@+id/favorites"
+           android:gravity="center"
+           android:drawableEnd="@drawable/rightarrow"
+           android:paddingEnd="20sp"
+
+           android:drawablePadding="10dp"
+           android:textAlignment="textStart"
+           android:text="@string/omiljeni"
+           android:textColor="@color/black"
+           android:textSize="25sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/imageView4"
+           tools:ignore="RtlCompat,RtlSymmetry"
+           app:drawableStartCompat="@drawable/heart" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:layout_marginTop="10dp"
+           android:paddingStart="20dp"
+           android:gravity="center"
+           android:textAlignment="textStart"
+           android:text="@string/odjavite_se"
+           android:id="@+id/signOut"
+           android:textColor="@color/black"
+           android:textSize="25sp"
+           android:drawablePadding="10dp"
+           android:paddingEnd="20sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/about"
+           tools:ignore="RtlCompat,RtlSymmetry"
+           app:drawableEndCompat="@drawable/rightarrow"
+           app:drawableStartCompat="@drawable/signout" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:layout_marginTop="10dp"
+           android:paddingStart="20dp"
+           android:gravity="center"
+
+           android:drawableEnd="@drawable/rightarrow"
+           android:paddingEnd="20sp"
+           android:drawablePadding="10dp"
+           android:textAlignment="textStart"
+           android:text="@string/o_nama"
+           android:id="@+id/about"
+           android:textColor="@color/black"
+           android:textSize="25sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/favorites"
+           tools:ignore="RtlCompat,RtlSymmetry"
+           app:drawableStartCompat="@drawable/about" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

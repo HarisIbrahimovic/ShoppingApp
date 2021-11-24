@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menuActivity"
+    tools:context=".shopmenu.MenuActivity">
+
+    <ImageView
+        android:id="@+id/menuImage"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/menuShopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="68dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuImage"
+        app:layout_constraintStart_toStartOf="@+id/menuImage" />
+
+    <TextView
+        android:id="@+id/menuShopLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/menuShopName"
+        app:layout_constraintTop_toBottomOf="@+id/menuShopName" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded"
+        android:text="@string/otvoreno"
+        app:layout_constraintStart_toStartOf="@+id/menuShopLocation"
+        app:layout_constraintTop_toBottomOf="@+id/menuShopLocation" />
+
+
+    <TextView
+        android:id="@+id/deliveryTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/white"
+        android:drawablePadding="5dp"
+        app:drawableTint="@color/white"
+        android:background="@drawable/rounded"
+        android:paddingTop="2.5dp"
+        android:paddingBottom="2.5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/menuShopLocation"
+        app:drawableStartCompat="@drawable/time" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/rounded"
+        android:drawablePadding="5dp"
+        android:id="@+id/ratingScore"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingTop="2.5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="2.5dp"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/star"
+        app:drawableTint="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/deliveryTime"
+        app:layout_constraintTop_toBottomOf="@+id/menuShopLocation" />
+
+    <TextView
+        android:id="@+id/addToFavorites"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/rounded"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:paddingStart="18dp"
+        android:paddingTop="2.5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="2.5dp"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/favorite"
+        app:drawableTint="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/ratingScore"
+        app:layout_constraintTop_toBottomOf="@+id/menuShopLocation" />
+
+
+
+    <TextView
+        android:id="@+id/shopContents"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:paddingStart="16dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuImage" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menuItemsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopContents" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

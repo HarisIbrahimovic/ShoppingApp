@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentBag"
+    tools:context=".main.fragments.BagFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/va_a_korpa"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:id="@+id/deleteBagButton"
+        android:src="@drawable/delete"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/layout_design"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" >
+
+        <ImageView
+            android:id="@+id/shopImageBag"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:id="@+id/shopNameBag"
+            app:layout_constraintStart_toEndOf="@+id/shopImageBag"
+            app:layout_constraintTop_toTopOf="@+id/shopImageBag" />
+
+        <TextView
+            android:id="@+id/shopingBagLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@+id/shopNameBag"
+            app:layout_constraintTop_toBottomOf="@+id/shopNameBag" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="10sp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/shopingBagLocation" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:id="@+id/artikliText"
+            android:text="@string/artikli"
+            app:layout_constraintStart_toEndOf="@+id/shopImageBag"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/recyclerViewBag"
+            app:layout_constraintTop_toBottomOf="@id/artikliText"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ukupan_iznos"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="100dp"
+            android:id="@+id/totalCostText"
+
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/recyclerViewBag" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/totalCost"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/totalCostText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="5dp"
+
+        android:id="@+id/bagLinearLayout"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sadsmile"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/va_a_korpa_je_trenutno_prazna"
+            android:textSize="22sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:id="@+id/locationView"
+    android:background="@drawable/editetext_design"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/editetext_design"
+        android:hint="@string/location"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/teal_200"
+        android:text="@string/dodaj"
+        android:id="@+id/addLocationButton"
+        android:layout_marginBottom="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/locationEditText"
+        app:layout_constraintStart_toStartOf="@+id/locationEditText"
+        app:layout_constraintTop_toBottomOf="@+id/locationEditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
